@@ -30,7 +30,14 @@ class SearchBar extends React.Component {
             <div className="uk-margin">
                 <form className="uk-search uk-search-default">
                     <span className="uk-search-icon-flip" uk-search-icon="true"></span>
-                    <input className="uk-search-input uk-form-width-large" type="text" value={this.state.queries} onChange={this.saveQuery.bind(this)} onKeyPress={this.handleKeyPress.bind(this)} placeholder="Search..." />
+                    <input
+                        className="uk-search-input uk-form-width-large"
+                        type="text"
+                        value={this.state.queries}
+                        onChange={this.saveQuery.bind(this)}
+                        onKeyPress={this.handleKeyPress.bind(this)}
+                        placeholder="Search..."
+                    />
                 </form>
             </div>
 

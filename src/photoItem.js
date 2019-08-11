@@ -27,10 +27,12 @@ class PhotoItem extends React.Component {
 
     render(){
         return(
-            <div className='item'>
-                <a href={'https://flickr.com/photos/' + this.props.owner + '/' + this.props.id}>
-                    <img alt="" src={this.state.url} />
-                </a>
+            <div className="item uk-card-hover">
+
+                    <a href={'https://flickr.com/photos/' + this.props.owner + '/' + this.props.id}>
+                        <img alt="" src={this.state.url} />
+                    </a>
+                
             </div>
 
         );

@@ -23,7 +23,7 @@ class Routing extends React.Component{
                 <div>
                     <div className="uk-container">
 
-                        <nav className="uk-navbar-container" uk-navbar="true">
+                        <nav className="uk-navbar-container nav" uk-navbar="true">
                             <div className="uk-navbar-left">
                                 <Link to="/"><h1>Formedix Test</h1></Link>
 
