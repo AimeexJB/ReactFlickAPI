@@ -1,3 +1,9 @@
+# ReactFlickAPI
+
+A React JavaScript web applications using the Flickr API to create a photos app that allows you to search for photos using keywords and also click into the photo to view useful information.
+React is a JavaScript library for building user interfaces.
+This project was built using one of my AdvancedJSGiphy app as reference. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,4 +72,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# ReactFlickAPI

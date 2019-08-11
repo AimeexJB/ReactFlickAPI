@@ -13,6 +13,8 @@ import SearchBar from './searchbar';
 class Routing extends React.Component{
     constructor(props){
         super(props);
+
+        console.log("Hello");
     }
 
     render(){

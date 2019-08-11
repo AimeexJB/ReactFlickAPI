@@ -31,7 +31,7 @@ class Photo extends React.Component {
   	}
 
     render() {
-        const {params} = this.props.match;
+        
         return (
 
             <div>
