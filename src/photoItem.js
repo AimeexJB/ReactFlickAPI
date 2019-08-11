@@ -1,3 +1,5 @@
+//When the Photo is selected it will bring you to the flickr photo page
+
 import React from 'react';
 
 
@@ -32,7 +34,7 @@ class PhotoItem extends React.Component {
                     <a href={'https://flickr.com/photos/' + this.props.owner + '/' + this.props.id}>
                         <img alt="" src={this.state.url} />
                     </a>
-                
+
             </div>
 
         );
