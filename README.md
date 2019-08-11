@@ -2,7 +2,7 @@
 
 A React JavaScript web applications using the Flickr API to create a photos app that allows you to search for photos using keywords and also click into the photo to view useful information.
 React is a JavaScript library for building user interfaces.
-This project was built using one of my [AdvancedJSGiphy](https://github.com/AimeexJB/AdvancedJSGiphy) app as reference.
+This project was built using my [AdvancedJSGiphy](https://github.com/AimeexJB/AdvancedJSGiphy) app as reference.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

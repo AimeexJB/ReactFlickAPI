@@ -19,7 +19,7 @@ class Photo extends React.Component {
 
     componentDidMount() {
         const {params} = this.props.match;
-        axios.get('https://api.flickr.com/services/rest/?method=' + params.id + '&api_key=678e56d7681b9f2aa7eb9ad67f929eac&format=json&nojsoncallback=1')
+        axios.get('https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=678e56d7681b9f2aa7eb9ad67f929eac&photo_id=' + params.id + 'format=json&nojsoncallback=1')
             .then(response => {
                 this.setState(
                     {url: `https://www.flickr.com/photos/${this.state.owner}/${this.state.id}`}
@@ -31,7 +31,7 @@ class Photo extends React.Component {
   	}
 
     render() {
-        
+
         return (
 
             <div>
