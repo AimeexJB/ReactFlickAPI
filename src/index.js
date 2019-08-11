@@ -1,12 +1,53 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { Route, Link, BrowserRouter, Switch } from 'react-router-dom';
+import './style.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import Recent from './Recent';
+import Photo from './photo';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import Search from './search';
+import SearchBar from './searchbar';
+
+class Routing extends React.Component{
+    constructor(props){
+        super(props);
+    }
+
+    render(){
+        return(
+            <BrowserRouter>
+                <div>
+                    <div className="uk-container">
+
+                        <nav className="uk-navbar-container" uk-navbar="true">
+                            <div className="uk-navbar-left">
+                                <Link to="/"><h1>Formedix Test</h1></Link>
+
+                            </div>
+                            <div className="uk-navbar-right">
+                                <SearchBar />
+                            </div>
+                        </nav>
+
+
+                        <Switch>
+                            <Route exact path="/" component={Recent} />
+                            <Route path="/photos/:id" component={Photo} />
+                            <Route path="/search/:q" component={Search} />
+                        </Switch>
+
+                    </div>
+
+                </div>
+            </BrowserRouter>
+        );
+    }
+}
+
+
+ReactDOM.render(
+    <Routing />,
+    document.getElementById('root')
+);
