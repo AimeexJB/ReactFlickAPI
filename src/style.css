@@ -16,3 +16,7 @@ body {
 .level {
     background-color: #c7b3e0;
 }
+
+.imgRounded {
+    border-radius: 20px;
+}

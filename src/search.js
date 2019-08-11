@@ -1,5 +1,3 @@
-// Partially works, search using the text box and it will retrieve a list of photos
-
 import React from 'react';
 import axios from 'axios';
 import PhotoItem from './photoItem.js';

@@ -32,7 +32,7 @@ class PhotoItem extends React.Component {
             <div className="item uk-card-hover">
 
                     <a href={'https://flickr.com/photos/' + this.props.owner + '/' + this.props.id}>
-                        <img alt="" src={this.state.url} />
+                        <img className='imgRounded' alt="" src={this.state.url} />
                     </a>
 
             </div>

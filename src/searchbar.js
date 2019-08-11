@@ -27,8 +27,8 @@ class SearchBar extends React.Component {
 
         return (
 
-            <div className="uk-margin">
-                <form className="uk-search uk-search-default">
+            <div className="uk-margin uk-navbar-item">
+                <form className="uk-search uk-search-default uk-search-navbar">
                     <span className="uk-search-icon-flip" uk-search-icon="true"></span>
                     <input
                         className="uk-search-input uk-form-width-large"
@@ -40,6 +40,7 @@ class SearchBar extends React.Component {
                     />
                 </form>
             </div>
+
 
         );
 

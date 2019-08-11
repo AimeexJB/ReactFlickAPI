@@ -21,12 +21,12 @@ class Routing extends React.Component{
         return(
             <BrowserRouter>
                 <div>
+
                     <div className="uk-container">
 
-                        <nav className="uk-navbar-container nav" uk-navbar="true">
+                        <nav className="uk-navbar-container" uk-navbar="true">
                             <div className="uk-navbar-left">
                                 <Link to="/"><h1>Formedix Test</h1></Link>
-
                             </div>
                             <div className="uk-navbar-right">
                                 <SearchBar />
@@ -37,7 +37,7 @@ class Routing extends React.Component{
                         <Switch>
                             <Route exact path="/" component={Recent} />
                             <Route path="/photos/:id" component={Photo} />
-                            <Route path="/search/:q" component={Search} />
+                            <Route path="/search/:query" component={Search} />
                         </Switch>
 
                     </div>
